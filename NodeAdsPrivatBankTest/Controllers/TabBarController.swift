@@ -13,12 +13,25 @@ class TabBarController: UITabBarController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.backgroundColor = .green
-   
+    let ATMList: UIViewController = ATMListVC()
+    let favoritesATM: UIViewController = FavoritesATMVC()
     
-    viewControllers = []
-    
+    viewControllers = [generateNavigationController(rootViewController: ATMList,
+                                                    title: "ATM List",
+                                                    image: UIImage(named: "list")!),
+                       generateNavigationController(rootViewController: favoritesATM,
+                                                    title: "Favorites",
+                                                    image: UIImage(named: "fav")!)]
+
   }
   
+  private func generateNavigationController(rootViewController: UIViewController, title: String, image: UIImage) -> UIViewController {
+    
+    let navigationController = UINavigationController(rootViewController: rootViewController)
+    navigationController.tabBarItem.title = title
+    navigationController.tabBarItem.image = image
+    
+   return navigationController
+  }
   
 }

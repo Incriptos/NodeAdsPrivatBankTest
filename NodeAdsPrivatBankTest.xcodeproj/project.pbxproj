@@ -115,8 +115,8 @@
 		831F7A88230C2FFD00EEF585 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				831F7A85230C2FEB00EEF585 /* ATMListVC.storyboard */,
 				831F7A75230C26E000EEF585 /* LaunchScreen.storyboard */,
+				831F7A85230C2FEB00EEF585 /* ATMListVC.storyboard */,
 				831F7A92230C348300EEF585 /* FavoritesATMVC.storyboard */,
 			);
 			path = Views;

@@ -14,7 +14,7 @@ class ATMListVC: UIViewController {
         super.viewDidLoad()
 
       
-      view.backgroundColor = .green
+      view.backgroundColor = .blue
       
     }
   
