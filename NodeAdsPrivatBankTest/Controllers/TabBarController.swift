@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TabBarController.swift
 //  NodeAdsPrivatBankTest
 //
 //  Created by Andrew Vashulenko on 8/20/19.
@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class TabBarController: UITabBarController {
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    
+    view.backgroundColor = .green
+   
+    
+    viewControllers = []
+    
   }
-
-
+  
+  
 }
-

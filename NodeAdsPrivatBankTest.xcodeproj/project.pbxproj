@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		831F7A6A230C26DC00EEF585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7A69230C26DC00EEF585 /* AppDelegate.swift */; };
-		831F7A6C230C26DC00EEF585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7A6B230C26DC00EEF585 /* ViewController.swift */; };
-		831F7A6F230C26DC00EEF585 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831F7A6D230C26DC00EEF585 /* Main.storyboard */; };
 		831F7A72230C26DC00EEF585 /* NodeAdsPrivatBankTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 831F7A70230C26DC00EEF585 /* NodeAdsPrivatBankTest.xcdatamodeld */; };
 		831F7A74230C26E000EEF585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831F7A73230C26E000EEF585 /* Assets.xcassets */; };
 		831F7A77230C26E000EEF585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831F7A75230C26E000EEF585 /* LaunchScreen.storyboard */; };
+		831F7A80230C27F800EEF585 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 831F7A7F230C27F800EEF585 /* .gitignore */; };
+		831F7A84230C2FDF00EEF585 /* ATMListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7A83230C2FDF00EEF585 /* ATMListVC.swift */; };
+		831F7A86230C2FEB00EEF585 /* ATMListVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831F7A85230C2FEB00EEF585 /* ATMListVC.storyboard */; };
+		831F7A8A230C30E000EEF585 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7A89230C30E000EEF585 /* UIViewController.swift */; };
+		831F7A91230C324A00EEF585 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7A90230C324A00EEF585 /* TabBarController.swift */; };
+		831F7A93230C348300EEF585 /* FavoritesATMVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831F7A92230C348300EEF585 /* FavoritesATMVC.storyboard */; };
+		831F7A95230C34BD00EEF585 /* FavoritesATMVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7A94230C34BD00EEF585 /* FavoritesATMVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		831F7A66230C26DC00EEF585 /* NodeAdsPrivatBankTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NodeAdsPrivatBankTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		831F7A69230C26DC00EEF585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		831F7A6B230C26DC00EEF585 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		831F7A6E230C26DC00EEF585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		831F7A71230C26DC00EEF585 /* NodeAdsPrivatBankTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NodeAdsPrivatBankTest.xcdatamodel; sourceTree = "<group>"; };
 		831F7A73230C26E000EEF585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		831F7A76230C26E000EEF585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		831F7A78230C26E000EEF585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		831F7A7F230C27F800EEF585 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		831F7A83230C2FDF00EEF585 /* ATMListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMListVC.swift; sourceTree = "<group>"; };
+		831F7A85230C2FEB00EEF585 /* ATMListVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ATMListVC.storyboard; sourceTree = "<group>"; };
+		831F7A89230C30E000EEF585 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		831F7A90230C324A00EEF585 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		831F7A92230C348300EEF585 /* FavoritesATMVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoritesATMVC.storyboard; sourceTree = "<group>"; };
+		831F7A94230C34BD00EEF585 /* FavoritesATMVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesATMVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,68 @@
 		831F7A68230C26DC00EEF585 /* NodeAdsPrivatBankTest */ = {
 			isa = PBXGroup;
 			children = (
-				831F7A69230C26DC00EEF585 /* AppDelegate.swift */,
-				831F7A6B230C26DC00EEF585 /* ViewController.swift */,
-				831F7A6D230C26DC00EEF585 /* Main.storyboard */,
-				831F7A73230C26E000EEF585 /* Assets.xcassets */,
-				831F7A75230C26E000EEF585 /* LaunchScreen.storyboard */,
-				831F7A78230C26E000EEF585 /* Info.plist */,
-				831F7A70230C26DC00EEF585 /* NodeAdsPrivatBankTest.xcdatamodeld */,
+				831F7A7E230C277000EEF585 /* main */,
+				831F7A87230C2FF300EEF585 /* Controllers */,
+				831F7A88230C2FFD00EEF585 /* Views */,
+				831F7A82230C292900EEF585 /* Support files */,
+				831F7A81230C291A00EEF585 /* CoreData */,
 			);
 			path = NodeAdsPrivatBankTest;
+			sourceTree = "<group>";
+		};
+		831F7A7E230C277000EEF585 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				831F7A69230C26DC00EEF585 /* AppDelegate.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		831F7A81230C291A00EEF585 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				831F7A70230C26DC00EEF585 /* NodeAdsPrivatBankTest.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		831F7A82230C292900EEF585 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				831F7A8B230C30F000EEF585 /* Extensions */,
+				831F7A73230C26E000EEF585 /* Assets.xcassets */,
+				831F7A7F230C27F800EEF585 /* .gitignore */,
+				831F7A78230C26E000EEF585 /* Info.plist */,
+			);
+			path = "Support files";
+			sourceTree = "<group>";
+		};
+		831F7A87230C2FF300EEF585 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				831F7A83230C2FDF00EEF585 /* ATMListVC.swift */,
+				831F7A90230C324A00EEF585 /* TabBarController.swift */,
+				831F7A94230C34BD00EEF585 /* FavoritesATMVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		831F7A88230C2FFD00EEF585 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				831F7A85230C2FEB00EEF585 /* ATMListVC.storyboard */,
+				831F7A75230C26E000EEF585 /* LaunchScreen.storyboard */,
+				831F7A92230C348300EEF585 /* FavoritesATMVC.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		831F7A8B230C30F000EEF585 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				831F7A89230C30E000EEF585 /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +188,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831F7A80230C27F800EEF585 /* .gitignore in Resources */,
 				831F7A77230C26E000EEF585 /* LaunchScreen.storyboard in Resources */,
+				831F7A93230C348300EEF585 /* FavoritesATMVC.storyboard in Resources */,
+				831F7A86230C2FEB00EEF585 /* ATMListVC.storyboard in Resources */,
 				831F7A74230C26E000EEF585 /* Assets.xcassets in Resources */,
-				831F7A6F230C26DC00EEF585 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +203,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				831F7A6C230C26DC00EEF585 /* ViewController.swift in Sources */,
 				831F7A72230C26DC00EEF585 /* NodeAdsPrivatBankTest.xcdatamodeld in Sources */,
 				831F7A6A230C26DC00EEF585 /* AppDelegate.swift in Sources */,
+				831F7A8A230C30E000EEF585 /* UIViewController.swift in Sources */,
+				831F7A95230C34BD00EEF585 /* FavoritesATMVC.swift in Sources */,
+				831F7A91230C324A00EEF585 /* TabBarController.swift in Sources */,
+				831F7A84230C2FDF00EEF585 /* ATMListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		831F7A6D230C26DC00EEF585 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				831F7A6E230C26DC00EEF585 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		831F7A75230C26E000EEF585 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UBGU9698UC;
-				INFOPLIST_FILE = NodeAdsPrivatBankTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NodeAdsPrivatBankTest/Support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UBGU9698UC;
-				INFOPLIST_FILE = NodeAdsPrivatBankTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NodeAdsPrivatBankTest/Support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
