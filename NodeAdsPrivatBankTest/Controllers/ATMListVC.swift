@@ -9,13 +9,23 @@
 import UIKit
 
 class ATMListVC: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-      
-      view.backgroundColor = .blue
-      
-    }
   
+  var networking = NetworkManager()
+  var fetcher = NetworkDataFetcher()
+  
+  private var city = "Киев"
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    
+    fetcher.fetchATMs(city: city) { (result) in
+      print()
+    }
+    
+  
+    view.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+    
+  }
 }
+

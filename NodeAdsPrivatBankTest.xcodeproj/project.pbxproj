@@ -18,6 +18,9 @@
 		831F7A91230C324A00EEF585 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7A90230C324A00EEF585 /* TabBarController.swift */; };
 		831F7A93230C348300EEF585 /* FavoritesATMVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831F7A92230C348300EEF585 /* FavoritesATMVC.storyboard */; };
 		831F7A95230C34BD00EEF585 /* FavoritesATMVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7A94230C34BD00EEF585 /* FavoritesATMVC.swift */; };
+		831F7A97230C473E00EEF585 /* ATMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7A96230C473E00EEF585 /* ATMModel.swift */; };
+		831F7AA2230CB45100EEF585 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AA1230CB45100EEF585 /* NetworkManager.swift */; };
+		831F7AA4230CB72000EEF585 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AA3230CB72000EEF585 /* NetworkDataFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		831F7A90230C324A00EEF585 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		831F7A92230C348300EEF585 /* FavoritesATMVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoritesATMVC.storyboard; sourceTree = "<group>"; };
 		831F7A94230C34BD00EEF585 /* FavoritesATMVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesATMVC.swift; sourceTree = "<group>"; };
+		831F7A96230C473E00EEF585 /* ATMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMModel.swift; sourceTree = "<group>"; };
+		831F7AA1230CB45100EEF585 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		831F7AA3230CB72000EEF585 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +73,10 @@
 			isa = PBXGroup;
 			children = (
 				831F7A7E230C277000EEF585 /* main */,
+				831F7A98230C4B5A00EEF585 /* Model */,
 				831F7A87230C2FF300EEF585 /* Controllers */,
 				831F7A88230C2FFD00EEF585 /* Views */,
+				831F7AA0230CB43800EEF585 /* Managers */,
 				831F7A82230C292900EEF585 /* Support files */,
 				831F7A81230C291A00EEF585 /* CoreData */,
 			);
@@ -128,6 +136,23 @@
 				831F7A89230C30E000EEF585 /* UIViewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		831F7A98230C4B5A00EEF585 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				831F7A96230C473E00EEF585 /* ATMModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		831F7AA0230CB43800EEF585 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				831F7AA1230CB45100EEF585 /* NetworkManager.swift */,
+				831F7AA3230CB72000EEF585 /* NetworkDataFetcher.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,10 +228,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831F7A97230C473E00EEF585 /* ATMModel.swift in Sources */,
 				831F7A72230C26DC00EEF585 /* NodeAdsPrivatBankTest.xcdatamodeld in Sources */,
 				831F7A6A230C26DC00EEF585 /* AppDelegate.swift in Sources */,
 				831F7A8A230C30E000EEF585 /* UIViewController.swift in Sources */,
+				831F7AA2230CB45100EEF585 /* NetworkManager.swift in Sources */,
 				831F7A95230C34BD00EEF585 /* FavoritesATMVC.swift in Sources */,
+				831F7AA4230CB72000EEF585 /* NetworkDataFetcher.swift in Sources */,
 				831F7A91230C324A00EEF585 /* TabBarController.swift in Sources */,
 				831F7A84230C2FDF00EEF585 /* ATMListVC.swift in Sources */,
 			);
