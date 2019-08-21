@@ -25,6 +25,8 @@
 		831F7AB0230D520900EEF585 /* ATMCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831F7AAE230D520900EEF585 /* ATMCell.xib */; };
 		831F7AB4230D8F6600EEF585 /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AB3230D8F6600EEF585 /* TODO.swift */; };
 		831F7AB6230D967700EEF585 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AB5230D967700EEF585 /* CoreDataStack.swift */; };
+		831F7AB9230DBB8E00EEF585 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AB7230DBB8E00EEF585 /* FavoritesCell.swift */; };
+		831F7ABA230DBB8E00EEF585 /* FavoritesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831F7AB8230DBB8E00EEF585 /* FavoritesCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		831F7AAE230D520900EEF585 /* ATMCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATMCell.xib; sourceTree = "<group>"; };
 		831F7AB3230D8F6600EEF585 /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
 		831F7AB5230D967700EEF585 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		831F7AB7230DBB8E00EEF585 /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
+		831F7AB8230DBB8E00EEF585 /* FavoritesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				831F7AAE230D520900EEF585 /* ATMCell.xib */,
+				831F7AB8230DBB8E00EEF585 /* FavoritesCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				831F7AAD230D520900EEF585 /* ATMCell.swift */,
+				831F7AB7230DBB8E00EEF585 /* FavoritesCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -247,6 +253,7 @@
 				831F7A86230C2FEB00EEF585 /* ATMListVC.storyboard in Resources */,
 				831F7AB0230D520900EEF585 /* ATMCell.xib in Resources */,
 				831F7A74230C26E000EEF585 /* Assets.xcassets in Resources */,
+				831F7ABA230DBB8E00EEF585 /* FavoritesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +270,7 @@
 				831F7AB6230D967700EEF585 /* CoreDataStack.swift in Sources */,
 				831F7A6A230C26DC00EEF585 /* AppDelegate.swift in Sources */,
 				831F7A8A230C30E000EEF585 /* UIViewController.swift in Sources */,
+				831F7AB9230DBB8E00EEF585 /* FavoritesCell.swift in Sources */,
 				831F7AA2230CB45100EEF585 /* NetworkManager.swift in Sources */,
 				831F7A95230C34BD00EEF585 /* FavoritesATMVC.swift in Sources */,
 				831F7AAF230D520900EEF585 /* ATMCell.swift in Sources */,

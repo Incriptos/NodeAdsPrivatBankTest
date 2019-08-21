@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HnS-xC-Ckk">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,35 @@
             <objects>
                 <viewController id="HnS-xC-Ckk" customClass="FavoritesATMVC" customModule="NodeAdsPrivatBankTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OvY-K8-FJ4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x0l-w0-eyn">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="HnS-xC-Ckk" id="heg-rm-g5D"/>
+                                    <outlet property="delegate" destination="HnS-xC-Ckk" id="nDf-ts-ybf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="x0l-w0-eyn" firstAttribute="top" secondItem="cfR-wT-r6R" secondAttribute="top" id="B18-7z-hDM"/>
+                            <constraint firstItem="x0l-w0-eyn" firstAttribute="trailing" secondItem="cfR-wT-r6R" secondAttribute="trailing" id="C7x-a1-PAR"/>
+                            <constraint firstAttribute="bottom" secondItem="x0l-w0-eyn" secondAttribute="bottom" id="KfQ-7k-ZjW"/>
+                            <constraint firstItem="x0l-w0-eyn" firstAttribute="leading" secondItem="cfR-wT-r6R" secondAttribute="leading" id="tFS-ca-2l3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cfR-wT-r6R"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="x0l-w0-eyn" id="qg5-1G-z0J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rzR-8B-8Qn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.875" y="133.09859154929578"/>
         </scene>
     </scenes>
 </document>
