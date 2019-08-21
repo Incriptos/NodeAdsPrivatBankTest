@@ -117,7 +117,7 @@
 		831F7A87230C2FF300EEF585 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				831F7AAB230D51A400EEF585 /* ATMListVC.swift */,
+				831F7AB2230D7A0A00EEF585 /* Cells */,
 				831F7A90230C324A00EEF585 /* TabBarController.swift */,
 				831F7A94230C34BD00EEF585 /* FavoritesATMVC.swift */,
 				831F7AAD230D520900EEF585 /* ATMCell.swift */,
@@ -128,7 +128,7 @@
 		831F7A88230C2FFD00EEF585 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				831F7AAE230D520900EEF585 /* ATMCell.xib */,
+				831F7AB1230D79F800EEF585 /* Cells */,
 				831F7A75230C26E000EEF585 /* LaunchScreen.storyboard */,
 				831F7A85230C2FEB00EEF585 /* ATMListVC.storyboard */,
 				831F7A92230C348300EEF585 /* FavoritesATMVC.storyboard */,
@@ -159,6 +159,22 @@
 				831F7AA3230CB72000EEF585 /* NetworkDataFetcher.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		831F7AB1230D79F800EEF585 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				831F7AAE230D520900EEF585 /* ATMCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		831F7AB2230D7A0A00EEF585 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				831F7AAB230D51A400EEF585 /* ATMListVC.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
