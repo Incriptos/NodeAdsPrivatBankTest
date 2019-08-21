@@ -25,7 +25,7 @@ struct Device: Decodable {
   let placeRu: String
   let latitude: String
   let longitude: String
-  let tw: Tw
+ // let tw: Tw
   
 }
 

@@ -13,8 +13,8 @@ class TabBarController: UITabBarController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let ATMList = ATMListVC()
-    let favoritesATM = FavoritesATMVC()
+    let ATMList: ATMListVC = ATMListVC.loadFromStoryboard()
+    let favoritesATM: FavoritesATMVC = FavoritesATMVC.loadFromStoryboard()
     
     viewControllers = [generateNavigationController(rootViewController: ATMList,
                                                     title: "ATM List",
