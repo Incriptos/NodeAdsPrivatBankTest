@@ -123,9 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				831F7AB2230D7A0A00EEF585 /* Cells */,
+				831F7AAB230D51A400EEF585 /* ATMListVC.swift */,
 				831F7A90230C324A00EEF585 /* TabBarController.swift */,
 				831F7A94230C34BD00EEF585 /* FavoritesATMVC.swift */,
-				831F7AAD230D520900EEF585 /* ATMCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 		831F7AB2230D7A0A00EEF585 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				831F7AAB230D51A400EEF585 /* ATMListVC.swift */,
+				831F7AAD230D520900EEF585 /* ATMCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";

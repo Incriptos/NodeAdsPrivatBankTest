@@ -34,6 +34,7 @@ class ATMListVC: UIViewController {
     fetchData()
     setupTableView()
     setupSearchBar()
+    setupNavigation()
     
     
     view.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
@@ -48,7 +49,10 @@ class ATMListVC: UIViewController {
     
     tableView.separatorStyle = .none
     tableView.backgroundColor = .clear
-
+    
+    tableView.rowHeight = UITableView.automaticDimension
+    tableView.estimatedRowHeight = 50
+    
   }
   
   private func setupSearchBar() {
@@ -59,6 +63,12 @@ class ATMListVC: UIViewController {
     navigationItem.searchController = searchController
     definesPresentationContext = true
     
+  }
+  
+  private func setupNavigation() {
+    
+    navigationItem.title = "Банкоматы города: \(city)"
+
   }
   
   private func fetchData() {
@@ -92,7 +102,7 @@ extension ATMListVC: UITableViewDataSource, UITableViewDelegate {
     
     cell.cityLabel.text = device.cityRU
     cell.addressLabel.text = device.fullAddressRu
-
+    
     return cell
   }
   

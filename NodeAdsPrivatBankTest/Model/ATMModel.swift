@@ -20,12 +20,12 @@ struct ATMModel: Decodable {
 struct Device: Decodable {
   
   let type: String
-  let cityRu: String
+  let cityRU: String
   let fullAddressRu: String
   let placeRu: String
   let latitude: String
   let longitude: String
- // let tw: Tw
+  let tw: Tw
   
 }
 
