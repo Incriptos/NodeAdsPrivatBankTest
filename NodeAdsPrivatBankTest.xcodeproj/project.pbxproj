@@ -23,6 +23,8 @@
 		831F7AAC230D51A500EEF585 /* ATMListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AAB230D51A400EEF585 /* ATMListVC.swift */; };
 		831F7AAF230D520900EEF585 /* ATMCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AAD230D520900EEF585 /* ATMCell.swift */; };
 		831F7AB0230D520900EEF585 /* ATMCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831F7AAE230D520900EEF585 /* ATMCell.xib */; };
+		831F7AB4230D8F6600EEF585 /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AB3230D8F6600EEF585 /* TODO.swift */; };
+		831F7AB6230D967700EEF585 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AB5230D967700EEF585 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		831F7AAB230D51A400EEF585 /* ATMListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMListVC.swift; sourceTree = "<group>"; };
 		831F7AAD230D520900EEF585 /* ATMCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMCell.swift; sourceTree = "<group>"; };
 		831F7AAE230D520900EEF585 /* ATMCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATMCell.xib; sourceTree = "<group>"; };
+		831F7AB3230D8F6600EEF585 /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
+		831F7AB5230D967700EEF585 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 				831F7AA0230CB43800EEF585 /* Managers */,
 				831F7A82230C292900EEF585 /* Support files */,
 				831F7A81230C291A00EEF585 /* CoreData */,
+				831F7AB3230D8F6600EEF585 /* TODO.swift */,
 			);
 			path = NodeAdsPrivatBankTest;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 		831F7AA0230CB43800EEF585 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				831F7AB5230D967700EEF585 /* CoreDataStack.swift */,
 				831F7AA1230CB45100EEF585 /* NetworkManager.swift */,
 				831F7AA3230CB72000EEF585 /* NetworkDataFetcher.swift */,
 			);
@@ -251,8 +257,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831F7AB4230D8F6600EEF585 /* TODO.swift in Sources */,
 				831F7A97230C473E00EEF585 /* ATMModel.swift in Sources */,
 				831F7A72230C26DC00EEF585 /* NodeAdsPrivatBankTest.xcdatamodeld in Sources */,
+				831F7AB6230D967700EEF585 /* CoreDataStack.swift in Sources */,
 				831F7A6A230C26DC00EEF585 /* AppDelegate.swift in Sources */,
 				831F7A8A230C30E000EEF585 /* UIViewController.swift in Sources */,
 				831F7AA2230CB45100EEF585 /* NetworkManager.swift in Sources */,

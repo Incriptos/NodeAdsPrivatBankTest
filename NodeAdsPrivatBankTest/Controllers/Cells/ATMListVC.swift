@@ -78,29 +78,21 @@ class ATMListVC: UIViewController {
 extension ATMListVC: UITableViewDataSource, UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
     if isFiltering {
       return filtredDevices.count
     } else {
       return devices.count
     }
-    
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: ATMCell.reusableId, for: indexPath) as! ATMCell
     
-    let device: Device
-    if isFiltering {
-      device = filtredDevices[indexPath.row]
-    } else {
-      device = devices[indexPath.row]
-    }
-
+    let device = isFiltering ? filtredDevices[indexPath.row] : devices[indexPath.row]
+    
     cell.cityLabel.text = device.cityRU
     cell.addressLabel.text = device.fullAddressRu
 
-    
     return cell
   }
   
@@ -117,7 +109,6 @@ extension ATMListVC: UISearchResultsUpdating {
   }
   
   private func filredContentForSearchText(_ searchText: String) {
-    
     
     filtredDevices = devices.filter({ (device: Device) -> Bool in
       return device.fullAddressRu.lowercased().contains(searchText.lowercased())
