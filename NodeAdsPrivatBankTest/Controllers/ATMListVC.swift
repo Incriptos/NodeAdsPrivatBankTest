@@ -36,7 +36,6 @@ class ATMListVC: UIViewController {
     setupSearchBar()
     setupNavigation()
     
-    
     view.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
     
   }
@@ -106,6 +105,23 @@ extension ATMListVC: UITableViewDataSource, UITableViewDelegate {
     return cell
   }
   
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    let alertController = UIAlertController(title: "Опции", message: "", preferredStyle: .actionSheet)
+    let showInfoAction = UIAlertAction(title: "Показать подробнее", style: .default) { (action) in
+      //TODO: Седать ВК для подробной инфы о бакомате.
+    }
+    let addToFavorite = UIAlertAction(title: "Добавить в избраное", style: .default) { (action) in
+      //TODO: Седать добавление в любимые.
+    }
+    let cancelAction = UIAlertAction(title: "Отмена", style: .cancel)
+    alertController.addAction(showInfoAction)
+    alertController.addAction(addToFavorite)
+    alertController.addAction(cancelAction)
+    self.present(alertController, animated: true)
+    
+  }
+
 }
 
 //MARK: - UISearchResultsUpdating

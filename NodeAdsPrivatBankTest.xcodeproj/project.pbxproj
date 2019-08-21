@@ -27,6 +27,9 @@
 		831F7AB6230D967700EEF585 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AB5230D967700EEF585 /* CoreDataStack.swift */; };
 		831F7AB9230DBB8E00EEF585 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AB7230DBB8E00EEF585 /* FavoritesCell.swift */; };
 		831F7ABA230DBB8E00EEF585 /* FavoritesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831F7AB8230DBB8E00EEF585 /* FavoritesCell.xib */; };
+		831F7ABC230DC77300EEF585 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7ABB230DC77300EEF585 /* UIView.swift */; };
+		831F7ABE230DCA6900EEF585 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7ABD230DCA6900EEF585 /* DetailVC.swift */; };
+		831F7AC0230DCA7400EEF585 /* DetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831F7ABF230DCA7400EEF585 /* DetailVC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		831F7AB5230D967700EEF585 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		831F7AB7230DBB8E00EEF585 /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
 		831F7AB8230DBB8E00EEF585 /* FavoritesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesCell.xib; sourceTree = "<group>"; };
+		831F7ABB230DC77300EEF585 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		831F7ABD230DCA6900EEF585 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		831F7ABF230DCA7400EEF585 /* DetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailVC.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 				831F7AAB230D51A400EEF585 /* ATMListVC.swift */,
 				831F7A90230C324A00EEF585 /* TabBarController.swift */,
 				831F7A94230C34BD00EEF585 /* FavoritesATMVC.swift */,
+				831F7ABD230DCA6900EEF585 /* DetailVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -141,6 +148,7 @@
 				831F7A75230C26E000EEF585 /* LaunchScreen.storyboard */,
 				831F7A85230C2FEB00EEF585 /* ATMListVC.storyboard */,
 				831F7A92230C348300EEF585 /* FavoritesATMVC.storyboard */,
+				831F7ABF230DCA7400EEF585 /* DetailVC.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				831F7A89230C30E000EEF585 /* UIViewController.swift */,
+				831F7ABB230DC77300EEF585 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -253,6 +262,7 @@
 				831F7A86230C2FEB00EEF585 /* ATMListVC.storyboard in Resources */,
 				831F7AB0230D520900EEF585 /* ATMCell.xib in Resources */,
 				831F7A74230C26E000EEF585 /* Assets.xcassets in Resources */,
+				831F7AC0230DCA7400EEF585 /* DetailVC.storyboard in Resources */,
 				831F7ABA230DBB8E00EEF585 /* FavoritesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,11 +279,13 @@
 				831F7A72230C26DC00EEF585 /* NodeAdsPrivatBankTest.xcdatamodeld in Sources */,
 				831F7AB6230D967700EEF585 /* CoreDataStack.swift in Sources */,
 				831F7A6A230C26DC00EEF585 /* AppDelegate.swift in Sources */,
+				831F7ABE230DCA6900EEF585 /* DetailVC.swift in Sources */,
 				831F7A8A230C30E000EEF585 /* UIViewController.swift in Sources */,
 				831F7AB9230DBB8E00EEF585 /* FavoritesCell.swift in Sources */,
 				831F7AA2230CB45100EEF585 /* NetworkManager.swift in Sources */,
 				831F7A95230C34BD00EEF585 /* FavoritesATMVC.swift in Sources */,
 				831F7AAF230D520900EEF585 /* ATMCell.swift in Sources */,
+				831F7ABC230DC77300EEF585 /* UIView.swift in Sources */,
 				831F7AA4230CB72000EEF585 /* NetworkDataFetcher.swift in Sources */,
 				831F7A91230C324A00EEF585 /* TabBarController.swift in Sources */,
 				831F7AAC230D51A500EEF585 /* ATMListVC.swift in Sources */,

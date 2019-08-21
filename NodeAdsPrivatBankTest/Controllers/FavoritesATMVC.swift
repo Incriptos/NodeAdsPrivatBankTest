@@ -14,12 +14,19 @@ class FavoritesATMVC: UIViewController {
   
   var favoritesDevices = [Device]()
   
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(true)
+    tableView.reloadData()
+  }
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      view.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
       setupTableView()
       setupNavigation()
+      
+      view.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
       
     }
   
