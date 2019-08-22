@@ -12,13 +12,13 @@ class FavoritesATMVC: UIViewController {
 
   @IBOutlet weak var tableView: UITableView!
   
-  var favoritesDevices = [Device]()
   
-  
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(true)
-    tableView.reloadData()
+  var favoritesDevices = [Device?]() {
+    didSet {
+      self.tableView.reloadData()
+    }
   }
+  
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,10 +64,11 @@ extension FavoritesATMVC: UITableViewDataSource, UITableViewDelegate {
     
     let device = favoritesDevices[indexPath.row]
     
-    cell.cityLabel.text = device.cityRU
-    cell.addressLabel.text = device.fullAddressRu
+    cell.cityLabel.text = device?.cityRU
+    cell.addressLabel.text = device?.fullAddressRu
     
     return cell
   }
   
 }
+ 

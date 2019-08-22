@@ -17,13 +17,78 @@
                     <view key="view" contentMode="scaleToFill" id="VBh-0G-07X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCG-X9-Z4w">
+                                <rect key="frame" x="16" y="155" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isQ-AN-Q1S">
+                                <rect key="frame" x="16" y="108" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="os6-2a-VkT">
+                                <rect key="frame" x="16" y="200.5" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Work Time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHL-gg-1GW">
+                                <rect key="frame" x="16" y="245" width="288" height="110"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggx-Hz-jNL">
+                                <rect key="frame" x="88" y="433" width="145" height="30"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FSM-Qa-WZK"/>
+                                    <constraint firstAttribute="width" constant="145" id="rco-hB-Bhb"/>
+                                </constraints>
+                                <state key="normal" title="Показать на карте">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMapAction:" destination="MVZ-cu-oHh" eventType="touchUpInside" id="Wtd-hl-K0W"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7pe-xX-Oil" firstAttribute="trailing" secondItem="aCG-X9-Z4w" secondAttribute="trailing" constant="16" id="2nc-SD-qYA"/>
+                            <constraint firstItem="7pe-xX-Oil" firstAttribute="trailing" secondItem="isQ-AN-Q1S" secondAttribute="trailing" constant="16" id="8jQ-aX-7hN"/>
+                            <constraint firstItem="ggx-Hz-jNL" firstAttribute="top" secondItem="tHL-gg-1GW" secondAttribute="bottom" constant="78" id="A2J-nZ-DWT"/>
+                            <constraint firstItem="aCG-X9-Z4w" firstAttribute="top" secondItem="isQ-AN-Q1S" secondAttribute="bottom" constant="26.5" id="H9f-6U-vgO"/>
+                            <constraint firstItem="7pe-xX-Oil" firstAttribute="bottom" secondItem="ggx-Hz-jNL" secondAttribute="bottom" constant="105" id="IGZ-dT-X6Y"/>
+                            <constraint firstItem="ggx-Hz-jNL" firstAttribute="leading" secondItem="7pe-xX-Oil" secondAttribute="leading" constant="88" id="JBx-4g-U4l"/>
+                            <constraint firstItem="tHL-gg-1GW" firstAttribute="top" secondItem="os6-2a-VkT" secondAttribute="bottom" constant="24" id="LwR-i5-x3F"/>
+                            <constraint firstItem="isQ-AN-Q1S" firstAttribute="leading" secondItem="7pe-xX-Oil" secondAttribute="leading" constant="16" id="PBb-g8-lGD"/>
+                            <constraint firstItem="7pe-xX-Oil" firstAttribute="trailing" secondItem="ggx-Hz-jNL" secondAttribute="trailing" constant="87" id="aGd-Bw-R9F"/>
+                            <constraint firstItem="os6-2a-VkT" firstAttribute="leading" secondItem="7pe-xX-Oil" secondAttribute="leading" constant="16" id="apn-Tq-lqi"/>
+                            <constraint firstItem="isQ-AN-Q1S" firstAttribute="top" secondItem="7pe-xX-Oil" secondAttribute="top" constant="88" id="dFF-xs-qZb"/>
+                            <constraint firstItem="tHL-gg-1GW" firstAttribute="leading" secondItem="7pe-xX-Oil" secondAttribute="leading" constant="16" id="kGb-eR-UiU"/>
+                            <constraint firstItem="aCG-X9-Z4w" firstAttribute="leading" secondItem="7pe-xX-Oil" secondAttribute="leading" constant="16" id="s3y-Ij-kGk"/>
+                            <constraint firstItem="7pe-xX-Oil" firstAttribute="trailing" secondItem="os6-2a-VkT" secondAttribute="trailing" constant="16" id="wjs-UW-Uec"/>
+                            <constraint firstItem="7pe-xX-Oil" firstAttribute="trailing" secondItem="tHL-gg-1GW" secondAttribute="trailing" constant="16" id="xf2-Zx-09E"/>
+                            <constraint firstItem="os6-2a-VkT" firstAttribute="top" secondItem="aCG-X9-Z4w" secondAttribute="bottom" constant="25" id="yNQ-tg-a1L"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7pe-xX-Oil"/>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="isQ-AN-Q1S" id="vDn-ig-d5j"/>
+                        <outlet property="fullAddressLabel" destination="aCG-X9-Z4w" id="rLe-zu-HNW"/>
+                        <outlet property="mapButton" destination="ggx-Hz-jNL" id="pja-0S-NCs"/>
+                        <outlet property="placeLabel" destination="os6-2a-VkT" id="nPL-Ez-s9c"/>
+                        <outlet property="workTimeLabel" destination="tHL-gg-1GW" id="xEv-jf-ASF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ksg-Hs-4Q2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="65"/>
+            <point key="canvasLocation" x="50.625" y="64.436619718309856"/>
         </scene>
     </scenes>
 </document>

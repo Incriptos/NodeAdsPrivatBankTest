@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 final class NetworkManager {
   
   func request(city: String, completion: @escaping (Data?, Error?) -> Void) {

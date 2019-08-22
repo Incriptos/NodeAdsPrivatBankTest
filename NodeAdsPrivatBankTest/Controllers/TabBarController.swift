@@ -17,10 +17,10 @@ class TabBarController: UITabBarController {
     let favoritesATM: FavoritesATMVC = FavoritesATMVC.loadFromStoryboard()
     
     viewControllers = [generateNavigationController(rootViewController: ATMList,
-                                                    title: "ATM List",
+                                                    title: "Банкоматы",
                                                     image: UIImage(named: "list")!),
                        generateNavigationController(rootViewController: favoritesATM,
-                                                    title: "Favorites ATMs",
+                                                    title: "Избраные",
                                                     image: UIImage(named: "fav")!)]
 
   }

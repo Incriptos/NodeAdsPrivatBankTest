@@ -79,7 +79,6 @@ class ATMListVC: UIViewController {
     }
   }
   
-  
 }
 
 //MARK: - UITableViewDataSource, UITableViewDelegate
@@ -109,10 +108,25 @@ extension ATMListVC: UITableViewDataSource, UITableViewDelegate {
     
     let alertController = UIAlertController(title: "Опции", message: "", preferredStyle: .actionSheet)
     let showInfoAction = UIAlertAction(title: "Показать подробнее", style: .default) { (action) in
-      //TODO: Седать ВК для подробной инфы о бакомате.
+      
+      let device = self.devices[indexPath.row]
+      
+      let detailVC: DetailVC = DetailVC.loadFromStoryboard()
+      self.navigationController?.pushViewController(viewController: detailVC, completion: {
+        
+        detailVC.currentDevice = device
+        
+      })
+      
     }
     let addToFavorite = UIAlertAction(title: "Добавить в избраное", style: .default) { (action) in
       //TODO: Седать добавление в любимые.
+      
+      let device = self.devices[indexPath.row]
+      
+      let favVC = FavoritesATMVC()
+      favVC.favoritesDevices.append(device)
+      
     }
     let cancelAction = UIAlertAction(title: "Отмена", style: .cancel)
     alertController.addAction(showInfoAction)
