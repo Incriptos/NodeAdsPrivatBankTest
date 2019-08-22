@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N2b-An-a1B">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MapVC-->
+        <scene sceneID="cTy-iJ-Z2O">
+            <objects>
+                <viewController id="N2b-An-a1B" customClass="MapVC" customModule="NodeAdsPrivatBankTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pn9-W4-Pj7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mBH-HD-HlT">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mBH-HD-HlT" firstAttribute="top" secondItem="BoC-CA-43O" secondAttribute="top" id="Gmx-LS-imb"/>
+                            <constraint firstItem="mBH-HD-HlT" firstAttribute="trailing" secondItem="BoC-CA-43O" secondAttribute="trailing" id="IcJ-4a-Tbp"/>
+                            <constraint firstItem="mBH-HD-HlT" firstAttribute="leading" secondItem="BoC-CA-43O" secondAttribute="leading" id="kM2-vs-w1u"/>
+                            <constraint firstItem="mBH-HD-HlT" firstAttribute="bottom" secondItem="BoC-CA-43O" secondAttribute="bottom" id="x19-gG-Np4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BoC-CA-43O"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="mBH-HD-HlT" id="THf-2B-3fz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z3n-4T-UF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.625" y="55.985915492957744"/>
+        </scene>
+    </scenes>
+</document>
