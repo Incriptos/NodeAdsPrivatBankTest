@@ -12,15 +12,8 @@ class FavoritesATMVC: UIViewController {
 
   @IBOutlet weak var tableView: UITableView!
   
-  var currentDevice: Device? {
-    didSet {
-      favoriteDevices.append(currentDevice!)
-    }
-  }
+  var favoriteDevices = [Any]()
   
-  var favoriteDevices = [Device]()
-  
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -30,6 +30,11 @@ struct Device: Decodable {
 }
 
 struct Tw: Decodable {
-  let mon, tue, wed, thu: String
-  let fri, sat, sun, hol: String
+  let mon: String
+  let tue: String
+  let wed: String
+  let thu: String
+  let fri: String
+  let sat: String
+  let sun: String
 }

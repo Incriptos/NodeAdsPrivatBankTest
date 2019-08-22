@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 final class ATMListVC: UIViewController {
   
@@ -27,6 +28,8 @@ final class ATMListVC: UIViewController {
   }
   
   private var city = "Киев"
+  
+  private var isFavorite: Bool = false
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -122,8 +125,7 @@ extension ATMListVC: UITableViewDataSource, UITableViewDelegate {
     let addToFavorite = UIAlertAction(title: "Добавить в избраное", style: .default) { (action) in
       //TODO: Седать добавление в любимые.
       
-      let device = self.devices[indexPath.row]
-      
+     // let device = self.devices[indexPath.row]
       
     }
     let cancelAction = UIAlertAction(title: "Отмена", style: .cancel)
