@@ -19,9 +19,6 @@ class MapVC: UIViewController {
     }
   }
   
-  override func viewWillDisappear(_ animated: Bool) {
-    navigationController?.popToRootViewController(animated: true)
-  }
   
  private func showDeviceMap(long: String, lati: String, placeName: String) {
   

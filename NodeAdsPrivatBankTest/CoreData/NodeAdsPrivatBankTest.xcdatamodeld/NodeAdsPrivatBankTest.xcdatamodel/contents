@@ -3,23 +3,9 @@
     <entity name="Atm" representedClassName=".Atm" syncable="YES">
         <attribute name="cityRU" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fullAddressRu" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="placeRu" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Wt" inverseName="relationship" inverseEntity="Wt" syncable="YES"/>
-    </entity>
-    <entity name="Wt" representedClassName="Wt" syncable="YES">
-        <attribute name="fri" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="mon" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="sat" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="sun" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="thu" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="tue" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="wed" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Atm" inverseName="relationship" inverseEntity="Atm" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <attribute name="isFavorites" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Atm" positionX="-238.65625" positionY="45.078125" width="128" height="133"/>
-        <element name="Wt" positionX="-54" positionY="27" width="128" height="163"/>
+        <element name="Atm" positionX="-45" positionY="0" width="128" height="90"/>
     </elements>
 </model>
