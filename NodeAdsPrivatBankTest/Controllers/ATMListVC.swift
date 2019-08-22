@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ATMListVC: UIViewController {
+final class ATMListVC: UIViewController {
   
   @IBOutlet weak var tableView: UITableView!
   
@@ -124,8 +124,6 @@ extension ATMListVC: UITableViewDataSource, UITableViewDelegate {
       
       let device = self.devices[indexPath.row]
       
-      let favVC = FavoritesATMVC()
-      favVC.favoritesDevices.append(device)
       
     }
     let cancelAction = UIAlertAction(title: "Отмена", style: .cancel)

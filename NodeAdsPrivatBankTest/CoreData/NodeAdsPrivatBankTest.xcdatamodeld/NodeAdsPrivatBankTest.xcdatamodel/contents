@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G87" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="Atms" representedClassName=".Atms" syncable="YES">
+        <attribute name="cityRU" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fri" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullAddressRu" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeRu" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sun" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thu" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wed" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Atms" positionX="-63" positionY="-18" width="128" height="225"/>
+    </elements>
 </model>

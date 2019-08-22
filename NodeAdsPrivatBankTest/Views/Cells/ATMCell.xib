@@ -31,6 +31,9 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fav" translatesAutoresizingMaskIntoConstraints="NO" id="yed-Wk-aeM">
+                        <rect key="frame" x="279" y="12" width="25" height="25"/>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="PoG-cY-5Ku" secondAttribute="bottom" constant="5.5" id="2Qm-3j-bQq"/>
@@ -39,6 +42,10 @@
                     <constraint firstItem="PoG-cY-5Ku" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ef8-vp-4v2"/>
                     <constraint firstAttribute="trailing" secondItem="z5g-R0-qRv" secondAttribute="trailing" constant="45" id="WmW-4a-Aap"/>
                     <constraint firstItem="PoG-cY-5Ku" firstAttribute="top" secondItem="z5g-R0-qRv" secondAttribute="bottom" constant="5" id="dze-i9-l7N"/>
+                    <constraint firstItem="yed-Wk-aeM" firstAttribute="leading" secondItem="z5g-R0-qRv" secondAttribute="trailing" constant="4" id="hKT-Re-4Gn"/>
+                    <constraint firstAttribute="trailing" secondItem="yed-Wk-aeM" secondAttribute="trailing" constant="16" id="iFL-yA-uOg"/>
+                    <constraint firstItem="yed-Wk-aeM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="oXB-2b-AUu"/>
+                    <constraint firstAttribute="bottom" secondItem="yed-Wk-aeM" secondAttribute="bottom" constant="12.5" id="r4o-0U-jsy"/>
                     <constraint firstAttribute="trailing" secondItem="PoG-cY-5Ku" secondAttribute="trailing" constant="45" id="v3l-Bk-Cph"/>
                 </constraints>
             </tableViewCellContentView>
@@ -46,8 +53,12 @@
             <connections>
                 <outlet property="addressLabel" destination="PoG-cY-5Ku" id="pf9-c3-mi9"/>
                 <outlet property="cityLabel" destination="z5g-R0-qRv" id="YfU-5J-lKd"/>
+                <outlet property="favoriteImageView" destination="yed-Wk-aeM" id="Of3-rC-1Gi"/>
             </connections>
             <point key="canvasLocation" x="47.826086956521742" y="34.821428571428569"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="fav" width="25" height="25"/>
+    </resources>
 </document>

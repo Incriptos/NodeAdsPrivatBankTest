@@ -20,13 +20,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktv-uM-WQo">
-                        <rect key="frame" x="10" y="5" width="300" height="17"/>
+                        <rect key="frame" x="10" y="5" width="265" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIZ-hn-R8W">
-                        <rect key="frame" x="10" y="27" width="300" height="17"/>
+                        <rect key="frame" x="10" y="27" width="265" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -34,11 +34,11 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="Ktv-uM-WQo" firstAttribute="leading" secondItem="5Gg-tD-p7M" secondAttribute="leading" constant="10" id="4vR-lr-qP5"/>
-                    <constraint firstAttribute="trailing" secondItem="Ktv-uM-WQo" secondAttribute="trailing" constant="10" id="KoB-JT-2rB"/>
+                    <constraint firstAttribute="trailing" secondItem="Ktv-uM-WQo" secondAttribute="trailing" constant="45" id="KoB-JT-2rB"/>
                     <constraint firstItem="RIZ-hn-R8W" firstAttribute="leading" secondItem="5Gg-tD-p7M" secondAttribute="leading" constant="10" id="N5Z-SL-Cjx"/>
                     <constraint firstItem="RIZ-hn-R8W" firstAttribute="top" secondItem="Ktv-uM-WQo" secondAttribute="bottom" constant="5" id="UJK-ne-r8x"/>
                     <constraint firstAttribute="bottom" secondItem="RIZ-hn-R8W" secondAttribute="bottom" constant="5.5" id="Uxf-id-TVA"/>
-                    <constraint firstAttribute="trailing" secondItem="RIZ-hn-R8W" secondAttribute="trailing" constant="10" id="YNs-Ey-5sS"/>
+                    <constraint firstAttribute="trailing" secondItem="RIZ-hn-R8W" secondAttribute="trailing" constant="45" id="YNs-Ey-5sS"/>
                     <constraint firstItem="Ktv-uM-WQo" firstAttribute="top" secondItem="5Gg-tD-p7M" secondAttribute="top" constant="5" id="eRw-OO-pZC"/>
                 </constraints>
             </tableViewCellContentView>
@@ -47,7 +47,7 @@
                 <outlet property="addressLabel" destination="RIZ-hn-R8W" id="hRg-6D-mOA"/>
                 <outlet property="cityLabel" destination="Ktv-uM-WQo" id="ZbS-ga-OAX"/>
             </connections>
-            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+            <point key="canvasLocation" x="47.826086956521742" y="34.821428571428569"/>
         </tableViewCell>
     </objects>
 </document>

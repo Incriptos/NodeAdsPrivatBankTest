@@ -14,9 +14,12 @@ class ATMCell: UITableViewCell {
   
   @IBOutlet weak var cityLabel: UILabel!
   @IBOutlet weak var addressLabel: UILabel!
+  @IBOutlet weak var favoriteImageView: UIImageView!
   
   override func awakeFromNib() {
         super.awakeFromNib()
+    
+    favoriteImageView.isHidden = true
     
     }
   

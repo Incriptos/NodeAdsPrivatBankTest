@@ -24,7 +24,6 @@
 		831F7AAF230D520900EEF585 /* ATMCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AAD230D520900EEF585 /* ATMCell.swift */; };
 		831F7AB0230D520900EEF585 /* ATMCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831F7AAE230D520900EEF585 /* ATMCell.xib */; };
 		831F7AB4230D8F6600EEF585 /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AB3230D8F6600EEF585 /* TODO.swift */; };
-		831F7AB6230D967700EEF585 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AB5230D967700EEF585 /* CoreDataStack.swift */; };
 		831F7AB9230DBB8E00EEF585 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AB7230DBB8E00EEF585 /* FavoritesCell.swift */; };
 		831F7ABA230DBB8E00EEF585 /* FavoritesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831F7AB8230DBB8E00EEF585 /* FavoritesCell.xib */; };
 		831F7ABC230DC77300EEF585 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7ABB230DC77300EEF585 /* UIView.swift */; };
@@ -33,6 +32,9 @@
 		831F7AC2230E890D00EEF585 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AC1230E890D00EEF585 /* UINavigationController.swift */; };
 		831F7AC4230E8DDC00EEF585 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F7AC3230E8DDC00EEF585 /* MapVC.swift */; };
 		831F7AC6230E8DEE00EEF585 /* MapVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831F7AC5230E8DEE00EEF585 /* MapVC.storyboard */; };
+		83393A91230F0751007B50F5 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83393A90230F0751007B50F5 /* CoreDataManager.swift */; };
+		83393A94230F18B7007B50F5 /* Atms+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83393A92230F18B7007B50F5 /* Atms+CoreDataClass.swift */; };
+		83393A95230F18B7007B50F5 /* Atms+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83393A93230F18B7007B50F5 /* Atms+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +57,6 @@
 		831F7AAD230D520900EEF585 /* ATMCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMCell.swift; sourceTree = "<group>"; };
 		831F7AAE230D520900EEF585 /* ATMCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATMCell.xib; sourceTree = "<group>"; };
 		831F7AB3230D8F6600EEF585 /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
-		831F7AB5230D967700EEF585 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		831F7AB7230DBB8E00EEF585 /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
 		831F7AB8230DBB8E00EEF585 /* FavoritesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesCell.xib; sourceTree = "<group>"; };
 		831F7ABB230DC77300EEF585 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -64,6 +65,9 @@
 		831F7AC1230E890D00EEF585 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		831F7AC3230E8DDC00EEF585 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		831F7AC5230E8DEE00EEF585 /* MapVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapVC.storyboard; sourceTree = "<group>"; };
+		83393A90230F0751007B50F5 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		83393A92230F18B7007B50F5 /* Atms+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atms+CoreDataClass.swift"; sourceTree = "<group>"; };
+		83393A93230F18B7007B50F5 /* Atms+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atms+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 		831F7A81230C291A00EEF585 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				83393A92230F18B7007B50F5 /* Atms+CoreDataClass.swift */,
+				83393A93230F18B7007B50F5 /* Atms+CoreDataProperties.swift */,
 				831F7A70230C26DC00EEF585 /* NodeAdsPrivatBankTest.xcdatamodeld */,
 			);
 			path = CoreData;
@@ -182,9 +188,9 @@
 		831F7AA0230CB43800EEF585 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				831F7AB5230D967700EEF585 /* CoreDataStack.swift */,
 				831F7AA1230CB45100EEF585 /* NetworkManager.swift */,
 				831F7AA3230CB72000EEF585 /* NetworkDataFetcher.swift */,
+				83393A90230F0751007B50F5 /* CoreDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -285,10 +291,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				831F7AB4230D8F6600EEF585 /* TODO.swift in Sources */,
+				83393A95230F18B7007B50F5 /* Atms+CoreDataProperties.swift in Sources */,
 				831F7A97230C473E00EEF585 /* ATMModel.swift in Sources */,
 				831F7A72230C26DC00EEF585 /* NodeAdsPrivatBankTest.xcdatamodeld in Sources */,
-				831F7AB6230D967700EEF585 /* CoreDataStack.swift in Sources */,
 				831F7A6A230C26DC00EEF585 /* AppDelegate.swift in Sources */,
+				83393A91230F0751007B50F5 /* CoreDataManager.swift in Sources */,
 				831F7ABE230DCA6900EEF585 /* DetailVC.swift in Sources */,
 				831F7A8A230C30E000EEF585 /* UIViewController.swift in Sources */,
 				831F7AB9230DBB8E00EEF585 /* FavoritesCell.swift in Sources */,
@@ -296,6 +303,7 @@
 				831F7AC2230E890D00EEF585 /* UINavigationController.swift in Sources */,
 				831F7AC4230E8DDC00EEF585 /* MapVC.swift in Sources */,
 				831F7A95230C34BD00EEF585 /* FavoritesATMVC.swift in Sources */,
+				83393A94230F18B7007B50F5 /* Atms+CoreDataClass.swift in Sources */,
 				831F7AAF230D520900EEF585 /* ATMCell.swift in Sources */,
 				831F7ABC230DC77300EEF585 /* UIView.swift in Sources */,
 				831F7AA4230CB72000EEF585 /* NetworkDataFetcher.swift in Sources */,
