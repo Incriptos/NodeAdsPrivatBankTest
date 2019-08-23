@@ -36,12 +36,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Work Time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHL-gg-1GW">
-                                <rect key="frame" x="16" y="245" width="288" height="110"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggx-Hz-jNL">
                                 <rect key="frame" x="88" y="433" width="145" height="30"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -56,12 +50,18 @@
                                     <action selector="showMapAction:" destination="MVZ-cu-oHh" eventType="touchUpInside" id="Wtd-hl-K0W"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Work Time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHL-gg-1GW">
+                                <rect key="frame" x="16" y="245" width="288" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7pe-xX-Oil" firstAttribute="trailing" secondItem="aCG-X9-Z4w" secondAttribute="trailing" constant="16" id="2nc-SD-qYA"/>
                             <constraint firstItem="7pe-xX-Oil" firstAttribute="trailing" secondItem="isQ-AN-Q1S" secondAttribute="trailing" constant="16" id="8jQ-aX-7hN"/>
-                            <constraint firstItem="ggx-Hz-jNL" firstAttribute="top" secondItem="tHL-gg-1GW" secondAttribute="bottom" constant="78" id="A2J-nZ-DWT"/>
+                            <constraint firstItem="ggx-Hz-jNL" firstAttribute="top" secondItem="tHL-gg-1GW" secondAttribute="bottom" constant="68" id="A2J-nZ-DWT"/>
                             <constraint firstItem="aCG-X9-Z4w" firstAttribute="top" secondItem="isQ-AN-Q1S" secondAttribute="bottom" constant="26.5" id="H9f-6U-vgO"/>
                             <constraint firstItem="7pe-xX-Oil" firstAttribute="bottom" secondItem="ggx-Hz-jNL" secondAttribute="bottom" constant="105" id="IGZ-dT-X6Y"/>
                             <constraint firstItem="ggx-Hz-jNL" firstAttribute="leading" secondItem="7pe-xX-Oil" secondAttribute="leading" constant="88" id="JBx-4g-U4l"/>

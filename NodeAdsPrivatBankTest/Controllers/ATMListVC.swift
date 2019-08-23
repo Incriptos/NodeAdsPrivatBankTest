@@ -27,12 +27,15 @@ final class ATMListVC: UIViewController {
     return searchController.isActive && !searchBarIsEmpty
   }
   
-  private var city = "Киев"
+  var city = UserDefaults.standard.string(forKey: "searchCity")
   
   private var isFavorites: Bool = false
   
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+
     
     fetchData()
     setupTableView()
@@ -63,18 +66,24 @@ final class ATMListVC: UIViewController {
     searchController.obscuresBackgroundDuringPresentation = false
     searchController.searchBar.placeholder = "Поиск"
     navigationItem.searchController = searchController
+    navigationItem.hidesSearchBarWhenScrolling = false
     definesPresentationContext = true
     
   }
   
   private func setupNavigation() {
     
-    navigationItem.title = "Банкоматы города: \(city)"
+    guard let searchCity = city else { return }
+    
+    navigationItem.title = "Банкоматы города: \(searchCity)"
 
   }
   
   private func fetchData() {
-    fetcher.fetchATMs(city: city) { [weak self] (cityResults) in
+    
+      guard let searchCity = city else { return }
+    
+    fetcher.fetchATMs(city: searchCity) { [weak self] (cityResults) in
       
       guard let cityResult = cityResults else { return }
       self?.devices = cityResult.devices

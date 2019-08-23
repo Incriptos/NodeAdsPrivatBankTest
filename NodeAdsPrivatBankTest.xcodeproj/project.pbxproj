@@ -35,6 +35,8 @@
 		83393AB3230F52C7007B50F5 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83393AB2230F52C7007B50F5 /* CoreDataManager.swift */; };
 		83393AB6230F53F2007B50F5 /* Atm+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83393AB4230F53F2007B50F5 /* Atm+CoreDataClass.swift */; };
 		83393AB7230F53F2007B50F5 /* Atm+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83393AB5230F53F2007B50F5 /* Atm+CoreDataProperties.swift */; };
+		83393AB9230FDB85007B50F5 /* StartVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83393AB8230FDB85007B50F5 /* StartVC.storyboard */; };
+		83393ABB230FDBB6007B50F5 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83393ABA230FDBB6007B50F5 /* StartVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		83393AB2230F52C7007B50F5 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		83393AB4230F53F2007B50F5 /* Atm+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atm+CoreDataClass.swift"; sourceTree = "<group>"; };
 		83393AB5230F53F2007B50F5 /* Atm+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Atm+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		83393AB8230FDB85007B50F5 /* StartVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartVC.storyboard; sourceTree = "<group>"; };
+		83393ABA230FDBB6007B50F5 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 				831F7A94230C34BD00EEF585 /* FavoritesATMVC.swift */,
 				831F7ABD230DCA6900EEF585 /* DetailVC.swift */,
 				831F7AC3230E8DDC00EEF585 /* MapVC.swift */,
+				83393ABA230FDBB6007B50F5 /* StartVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				831F7A92230C348300EEF585 /* FavoritesATMVC.storyboard */,
 				831F7ABF230DCA7400EEF585 /* DetailVC.storyboard */,
 				831F7AC5230E8DEE00EEF585 /* MapVC.storyboard */,
+				83393AB8230FDB85007B50F5 /* StartVC.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 			files = (
 				831F7A80230C27F800EEF585 /* .gitignore in Resources */,
 				831F7AC6230E8DEE00EEF585 /* MapVC.storyboard in Resources */,
+				83393AB9230FDB85007B50F5 /* StartVC.storyboard in Resources */,
 				831F7A77230C26E000EEF585 /* LaunchScreen.storyboard in Resources */,
 				831F7A93230C348300EEF585 /* FavoritesATMVC.storyboard in Resources */,
 				831F7A86230C2FEB00EEF585 /* ATMListVC.storyboard in Resources */,
@@ -305,6 +312,7 @@
 				831F7AC4230E8DDC00EEF585 /* MapVC.swift in Sources */,
 				831F7A95230C34BD00EEF585 /* FavoritesATMVC.swift in Sources */,
 				831F7AAF230D520900EEF585 /* ATMCell.swift in Sources */,
+				83393ABB230FDBB6007B50F5 /* StartVC.swift in Sources */,
 				831F7ABC230DC77300EEF585 /* UIView.swift in Sources */,
 				831F7AA4230CB72000EEF585 /* NetworkDataFetcher.swift in Sources */,
 				831F7A91230C324A00EEF585 /* TabBarController.swift in Sources */,

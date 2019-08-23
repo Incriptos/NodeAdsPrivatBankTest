@@ -30,7 +30,10 @@ class DetailVC: UIViewController {
     super.viewWillLayoutSubviews()
     
     mapButton.layer.cornerRadius = 10
-    // add shadow
+    mapButton.layer.shadowColor =  UIColor.black.cgColor
+    mapButton.layer.shadowOpacity = 0.3
+    mapButton.layer.shadowOffset = CGSize.zero
+    mapButton.layer.shadowRadius = 8
   }
   
   override func viewDidLoad() {

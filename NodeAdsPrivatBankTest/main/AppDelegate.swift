@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     window = UIWindow()
     window?.makeKeyAndVisible()
-    window?.rootViewController = TabBarController()
+    let startVC: StartVC = StartVC.loadFromStoryboard()
+    let navigationController = UINavigationController(rootViewController: startVC)
+    window?.rootViewController = navigationController
     
     return true
   }

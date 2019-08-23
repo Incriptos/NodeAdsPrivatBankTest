@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gZd-rO-klE">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--StartVC-->
+        <scene sceneID="wcM-Jg-WI3">
+            <objects>
+                <viewController id="gZd-rO-klE" customClass="StartVC" customModule="NodeAdsPrivatBankTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tCp-RZ-uND">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите город:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88H-A3-yfc">
+                                <rect key="frame" x="16" y="194" width="288" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5D3-N1-se4">
+                                <rect key="frame" x="80" y="246" width="160" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bb2-im-fha"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mm4-D8-QST">
+                                <rect key="frame" x="110" y="360" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mzg-59-7cc"/>
+                                    <constraint firstAttribute="width" constant="100" id="UdE-bK-bXp"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchAction:" destination="gZd-rO-klE" eventType="touchUpInside" id="A5y-wf-vWV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mm4-D8-QST" firstAttribute="leading" secondItem="qXT-Zs-1ti" secondAttribute="leading" constant="110" id="1Ii-fM-wdb"/>
+                            <constraint firstItem="88H-A3-yfc" firstAttribute="leading" secondItem="qXT-Zs-1ti" secondAttribute="leading" constant="16" id="3W4-cN-94r"/>
+                            <constraint firstItem="88H-A3-yfc" firstAttribute="top" secondItem="qXT-Zs-1ti" secondAttribute="top" constant="174" id="B3I-wv-MT9"/>
+                            <constraint firstItem="qXT-Zs-1ti" firstAttribute="trailing" secondItem="88H-A3-yfc" secondAttribute="trailing" constant="16" id="Cqj-jl-LtM"/>
+                            <constraint firstItem="qXT-Zs-1ti" firstAttribute="trailing" secondItem="5D3-N1-se4" secondAttribute="trailing" constant="80" id="Fly-oL-S5s"/>
+                            <constraint firstItem="qXT-Zs-1ti" firstAttribute="trailing" secondItem="mm4-D8-QST" secondAttribute="trailing" constant="110" id="Obw-wK-odi"/>
+                            <constraint firstItem="5D3-N1-se4" firstAttribute="leading" secondItem="qXT-Zs-1ti" secondAttribute="leading" constant="80" id="XZa-DY-Hh0"/>
+                            <constraint firstItem="5D3-N1-se4" firstAttribute="top" secondItem="88H-A3-yfc" secondAttribute="bottom" constant="28" id="YBF-D0-6nz"/>
+                            <constraint firstItem="qXT-Zs-1ti" firstAttribute="bottom" secondItem="mm4-D8-QST" secondAttribute="bottom" constant="178" id="ZHr-Ch-qzO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qXT-Zs-1ti"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qzV-qO-vc8"/>
+                    <connections>
+                        <outlet property="cityTextField" destination="5D3-N1-se4" id="XgP-7s-XCe"/>
+                        <outlet property="searchButton" destination="mm4-D8-QST" id="EEn-92-D7A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xGr-vv-d1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1201.875" y="99.295774647887328"/>
+        </scene>
+    </scenes>
+</document>
