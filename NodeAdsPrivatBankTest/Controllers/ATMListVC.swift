@@ -109,19 +109,24 @@ extension ATMListVC: UITableViewDataSource, UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-    let alertController = UIAlertController(title: "Опции", message: "", preferredStyle: .actionSheet)
+    tableView.deselectRow(at: indexPath, animated: true)
+    
+    let device = self.devices[indexPath.row]
+    
+    let alertController = UIAlertController(title: "Опции", message: device.fullAddressRu, preferredStyle: .actionSheet)
+    
     let showInfoAction = UIAlertAction(title: "Показать подробнее", style: .default) { (action) in
       
-      let device = self.devices[indexPath.row]
       
       let detailVC: DetailVC = DetailVC.loadFromStoryboard()
+      
       self.navigationController?.pushViewController(viewController: detailVC, completion: {
         
         detailVC.currentDevice = device
         
       })
-      
     }
+    
     let addToFavorite = UIAlertAction(title: "Добавить в избраное", style: .default) { (action) in
       //TODO: Седать добавление в любимые.
       

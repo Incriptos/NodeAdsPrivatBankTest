@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 
 class CoreDataManager: NSObject {
+  
   private override init(){}
   
   static let shared = CoreDataManager()

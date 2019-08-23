@@ -15,18 +15,19 @@ class FavoritesATMVC: UIViewController {
 
   @IBOutlet weak var tableView: UITableView!
   
-
-// static var favoritesDevices = [Atm]()
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(true)
+    CoreDataManager.shared.fetchObject()
+    tableView.reloadData()
+  }
   
     override func viewDidLoad() {
         super.viewDidLoad()
       
       setupTableView()
       setupNavigation()
-      tableView.reloadData()
       view.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
-      CoreDataManager.shared.fetchObject()
-      
+  
     }
   
   private func setupTableView() {
@@ -69,9 +70,12 @@ extension FavoritesATMVC: UITableViewDataSource, UITableViewDelegate {
     return cell
   }
   
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      tableView.deselectRow(at: indexPath, animated: true)
+  }
+  
   func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
     
- //  let devace = favoritesDevices[indexPath.row]
     
     let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { (_, _) in
       
