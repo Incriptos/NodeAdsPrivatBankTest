@@ -14,6 +14,7 @@ final class ATMListVC: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   
   private var fetcher = NetworkDataFetcher()
+  private let persistenceManager = PersistenceManager.shared
   
   private var devices = [Device]()
   private var filtredDevices = [Device]()
@@ -143,10 +144,12 @@ extension ATMListVC: UITableViewDataSource, UITableViewDelegate {
       
       let device = self.devices[indexPath.row]
       
-      CoreDataManager.shared.saveObject(cityRU: device.cityRU, fullAddressRu: device.fullAddressRu, isFavorites: self.isFavorites, completion: { (true) in
-        print("save")
-      })
+      let coreAtm = Atm(context: self.persistenceManager.context)
+      coreAtm.cityRU = device.cityRU
+      coreAtm.fullAddressRu = device.fullAddressRu
+      coreAtm.isFavorites = self.isFavorites
       
+      self.persistenceManager.save()
       
     }
     let cancelAction = UIAlertAction(title: "Отмена", style: .cancel)

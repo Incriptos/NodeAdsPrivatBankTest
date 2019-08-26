@@ -9,17 +9,19 @@
 import UIKit
 import CoreData
 
-var favoritesDevices = [Atm]()
-
-class FavoritesATMVC: UIViewController {
+final class FavoritesATMVC: UIViewController {
 
   @IBOutlet weak var tableView: UITableView!
   
+  private let persistenceManager = PersistenceManager.shared
+  var favoritesDevices = [Atm]()
+  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(true)
-    CoreDataManager.shared.fetchObject()
+    fetchFavAtms()
     tableView.reloadData()
   }
+  
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +50,13 @@ class FavoritesATMVC: UIViewController {
     
   }
   
+  func fetchFavAtms() {
+    
+    persistenceManager.fetchData(Atm.self) { [weak self] (atms) in
+      self?.favoritesDevices = atms
+    }
+    
+  }
 }
 
 extension FavoritesATMVC: UITableViewDataSource, UITableViewDelegate {
@@ -79,9 +88,10 @@ extension FavoritesATMVC: UITableViewDataSource, UITableViewDelegate {
     
     let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { (_, _) in
       
-      let device = favoritesDevices[indexPath.row]
+      let device = self.favoritesDevices[indexPath.row]
       
-      CoreDataManager.shared.deleteObject(device, at: indexPath)
+      self.persistenceManager.delete(device)
+      self.favoritesDevices.remove(at: indexPath.row)
       
       tableView.deleteRows(at: [indexPath], with: .automatic)
     }

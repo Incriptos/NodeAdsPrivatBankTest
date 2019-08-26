@@ -9,53 +9,53 @@
 import UIKit
 import CoreData
 
-class CoreDataManager: NSObject {
-  
-  private override init(){}
-  
-  static let shared = CoreDataManager()
-  
-  private func getContext()->NSManagedObjectContext{
-    return (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-  }
-  
-  func saveObject(cityRU: String, fullAddressRu: String, isFavorites: Bool, completion: @escaping (Bool) -> ()) {
-    let entity = NSEntityDescription.entity(forEntityName: "Atm", in: getContext())
-    let managedObject = NSManagedObject(entity: entity!, insertInto: getContext())
-    
-    //сохраняем все данные
-    managedObject.setValue(cityRU, forKey: "cityRU")
-    managedObject.setValue(fullAddressRu, forKey: "fullAddressRu")
-    managedObject.setValue(isFavorites, forKey: "isFavorites")
 
-    do{
-      try getContext().save()
-      completion(true)
-    } catch {
-      completion(false)
-    }
-  }
+final class PersistenceManager {
+  private init() {}
+  static let shared = PersistenceManager()
   
-  func fetchObject() {
-    let fetchRequest:NSFetchRequest<Atm> = Atm.fetchRequest()
+  lazy var persistentContainer: NSPersistentContainer = {
+    let container = NSPersistentContainer(name: "NodeAdsPrivatBankTest")
+    container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+      if let error = error as NSError? {
+        fatalError("Unresolved error \(error), \(error.userInfo)")
+      }
+    })
+    return container
+  }()
+  
+  lazy var context = persistentContainer.viewContext
+  
+  func save() {
+    if context.hasChanges {
+      do {
+        try context.save()
+        print("saved successfully")
+      } catch {
+        let nserror = error as NSError
+        fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+      }
+    }
+  
+}
+
+  func fetchData<T: NSManagedObject>(_ objectType: T.Type, completion: @escaping ([T]) -> Void ) {
+    
+    let fetchRequest = NSFetchRequest<T>(entityName: String(describing: objectType))
     
     do {
-      favoritesDevices = try getContext().fetch(fetchRequest)
-      
-    } catch let error as NSError {
-        print("Could not fetch. \(error)")
+      let objects = try context.fetch(fetchRequest)
+      completion(objects)
+    } catch  {
+      print(error)
+      completion([])
     }
   }
   
-  //delete single contact
-  func deleteObject(_ device: NSManagedObject, at indexPath: IndexPath) {
-    getContext().delete(device)
-    do {
-      try getContext().save()
-      favoritesDevices.remove(at: indexPath.row)
-    } catch {
-      print(error)
+  
+    func delete(_ object: NSManagedObject) {
+      context.delete(object)
+      save()
     }
-  }
   
 }
